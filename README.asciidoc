@@ -8,6 +8,8 @@
 . `vagrant up` +
    Will start "All in One" OpenShift instance suitable for developing new docker images for use with OpenShift.
 . `vagrant ssh` +
+. http://localhost:6666/... +
+   Console for the OpenShift instance
    Allows low level access to the OpenShift instance for debugging and development.
 . `vagrant halt` +
    Stops a running OpenShift instance
