@@ -2,8 +2,9 @@
 
 .Steps
 . Install VirtualBox +
-  TODO# libvirt, fusion support
-. Install vagrant
+  TODO: libvirt, fusion support
+. Install vagrant +
+  https://www.vagrantup.com/downloads.html
 . `vagrant up` +
    Will start "All in One" OpenShift instance suitable for developing new docker images for use with OpenShift.
 . `vagrant ssh` +
