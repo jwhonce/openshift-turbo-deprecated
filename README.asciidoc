@@ -1,7 +1,7 @@
 # Turbo start developing for OpenShift v3
 
 .Steps
-. Install VirtualBox
+. Install VirtualBox +
   TODO# libvirt, fusion support
 . Install vagrant
 . `vagrant up` +
