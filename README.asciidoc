@@ -13,6 +13,6 @@
 . `vagrant destroy` +
    Destroys the OpenShift instance
 . `vagrant box update` +
-   ~~Is this the path we want to go?~~ 
+   _Is this the path we want to go?_
 
 
