@@ -4,15 +4,15 @@
 . Install VirtualBox
   TODO# libvirt, fusion support
 . Install vagrant
-. `vagrant up`
+. `vagrant up` +
    Will start "All in One" OpenShift instance suitable for developing new docker images for use with OpenShift.
-. `vagrant ssh`
+. `vagrant ssh` +
    Allows low level access to the OpenShift instance for debugging and development.
-. `vagrant halt`
+. `vagrant halt` +
    Stops a running OpenShift instance
-. `vagrant destroy`
+. `vagrant destroy` +
    Destroys the OpenShift instance
-. `vagrant box update`
+. `vagrant box update` +
    ~~Is this the path we want to go?~~ 
 
 
