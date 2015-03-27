@@ -7,8 +7,10 @@
   https://www.vagrantup.com/downloads.html
 . `vagrant up` +
    Will start "All in One" OpenShift instance suitable for developing new docker images for use with OpenShift.
+. Configure Host/Guest bridged network +
+   TBD
 . http://openshift.local:8443/ +
-   Console for the OpenShift instance
+   Access console and REST API's for the OpenShift instance
 . `vagrant ssh` +
    Allows low level access to the OpenShift instance for debugging and development.
 . `vagrant halt` +
