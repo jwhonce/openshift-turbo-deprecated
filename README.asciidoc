@@ -3,7 +3,7 @@
 Please review the steps below, if you have any questions or concerns please see http://... for more detailed instructions and
 debugging assistance.
 
-.Steps
+.To get started now: +
 . Install VirtualBox +
   https://www.virtualbox.org/wiki/Downloads +
   *TODO:* libvirt, fusion support
@@ -22,7 +22,7 @@ debugging assistance.
 . `vagrant halt` +
    Stops a running OpenShift instance
 
-.To upgrade your VM +
+.To upgrade your VM: +
 . `vagrant destory` +
   Destroys the OpenShift instance
 . `vagrant up` +
