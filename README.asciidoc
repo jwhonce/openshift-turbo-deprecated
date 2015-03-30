@@ -1,10 +1,10 @@
+.*TBD Items:*
+. Where do we map the developers code directory into VM?
+
 # Turbo start developing _images/containers_ for use with OpenShift v3 PaaS
 
 Please review the steps below, if you have any questions or concerns please see http://... for more detailed instructions and
 debugging assistance.
-
-.*Action Items:*
-. Where do we map the developers code directory into VM?
 
 .To get started now: +
 . Install VirtualBox +
