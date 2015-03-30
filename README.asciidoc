@@ -7,11 +7,11 @@ Please review the steps below, if you have any questions or concerns please see 
 debugging assistance.
 
 .To get started now: +
+. Install vagrant +
+  https://www.vagrantup.com/downloads.html +
 . Install VirtualBox +
   https://www.virtualbox.org/wiki/Downloads +
   *TODO:* libvirt, fusion support
-. Install vagrant +
-  https://www.vagrantup.com/downloads.html +
 . `git clone git@github.com:jwhonce/openshift-turbo.git` +
   *TODO:* move repo to openshift project
 . `vagrant up` +
