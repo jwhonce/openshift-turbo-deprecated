@@ -3,6 +3,7 @@
 .Steps
 . Install VirtualBox +
   TODO: libvirt, fusion support
+  https://www.virtualbox.org/wiki/Downloads
 . Install vagrant +
   https://www.vagrantup.com/downloads.html
 . `vagrant up` +
