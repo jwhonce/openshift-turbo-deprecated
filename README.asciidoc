@@ -5,7 +5,9 @@
   https://www.virtualbox.org/wiki/Downloads +
   TODO: libvirt, fusion support
 . Install vagrant +
-  https://www.vagrantup.com/downloads.html
+  https://www.vagrantup.com/downloads.html +
+. `git clone git@github.com:jwhonce/openshift-turbo.git` +
+  TODO: move repo to openshift project
 . `vagrant up` +
    Will start "All in One" OpenShift instance suitable for developing new docker images for use with OpenShift.
 . Configure Host/Guest bridged network +
