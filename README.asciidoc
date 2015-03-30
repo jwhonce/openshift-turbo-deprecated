@@ -19,9 +19,9 @@
 . `vagrant halt` +
    Stops a running OpenShift instance
 . To upgrade your VM +
-  .  `vagrant destory`
-     Destroys the OpenShift instance
-  .  `vagrant up`
-     Creates an OpenShift instance with the latest code
+  1. `vagrant destory`
+    Destroys the OpenShift instance
+  2. `vagrant up`
+    Creates an OpenShift instance with the latest code
 
 
