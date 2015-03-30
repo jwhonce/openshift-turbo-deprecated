@@ -3,15 +3,15 @@
 .Steps
 . Install VirtualBox +
   https://www.virtualbox.org/wiki/Downloads +
-  TODO: libvirt, fusion support
+  _TODO:_ libvirt, fusion support
 . Install vagrant +
   https://www.vagrantup.com/downloads.html +
 . `git clone git@github.com:jwhonce/openshift-turbo.git` +
-  TODO: move repo to openshift project
+  _TODO:_ move repo to openshift project
 . `vagrant up` +
    Will start "All in One" OpenShift instance suitable for developing new docker images for use with OpenShift.
 . Configure Host/Guest bridged network +
-   TBD
+   _TBD_
 . http://openshift.local:8443/ +
    Access console and REST API's for the OpenShift instance
 . `vagrant ssh` +
