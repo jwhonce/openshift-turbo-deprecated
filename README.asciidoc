@@ -1,5 +1,8 @@
 # Turbo start developing _images/containers_ for OpenShift v3
 
+Please review the steps below, if you have any questions or concerns please see http://... for more detailed instructions and
+debugging assistance.
+
 .Steps
 . Install VirtualBox +
   https://www.virtualbox.org/wiki/Downloads +
