@@ -1,17 +1,17 @@
-# Turbo start developing for OpenShift v3
+# Turbo start developing _images/containers_ for OpenShift v3
 
 .Steps
 . Install VirtualBox +
   https://www.virtualbox.org/wiki/Downloads +
-  _TODO:_ libvirt, fusion support
+  *TODO:* libvirt, fusion support
 . Install vagrant +
   https://www.vagrantup.com/downloads.html +
 . `git clone git@github.com:jwhonce/openshift-turbo.git` +
-  _TODO:_ move repo to openshift project
+  *TODO:* move repo to openshift project
 . `vagrant up` +
    Will start "All in One" OpenShift instance suitable for developing new docker images for use with OpenShift.
 . Configure Host/Guest bridged network +
-   _TBD_
+   *TBD*
 . http://openshift.local:8443/ +
    Access console and REST API's for the OpenShift instance
 . `vagrant ssh` +
