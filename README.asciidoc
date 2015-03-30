@@ -3,6 +3,9 @@
 Please review the steps below, if you have any questions or concerns please see http://... for more detailed instructions and
 debugging assistance.
 
+.*Action Items:*
+. Where do we map the developers code directory into VM?
+
 .To get started now: +
 . Install VirtualBox +
   https://www.virtualbox.org/wiki/Downloads +
