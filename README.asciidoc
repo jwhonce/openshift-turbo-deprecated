@@ -15,9 +15,10 @@
    Allows low level access to the OpenShift instance for debugging and development.
 . `vagrant halt` +
    Stops a running OpenShift instance
-. `vagrant destroy` +
-   Destroys the OpenShift instance
-. `vagrant box update` +
-   _Is this the path we want to go?_
+. To upgrade your VM +
+  . `vagrant destory`
+    Destroys the OpenShift instance
+  . `vagrant up`
+    Creates an OpenShift instance with the latest code
 
 
