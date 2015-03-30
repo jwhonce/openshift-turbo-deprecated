@@ -21,10 +21,11 @@ debugging assistance.
    Allows low level access to the OpenShift instance for debugging and development.
 . `vagrant halt` +
    Stops a running OpenShift instance
-. To upgrade your VM +
-  .. `vagrant destory` +
-    Destroys the OpenShift instance
-  .. `vagrant up` +
-    Creates an OpenShift instance with the latest code
+
+.To upgrade your VM +
+. `vagrant destory` +
+  Destroys the OpenShift instance
+. `vagrant up` +
+  Creates an OpenShift instance with the latest code
 
 
