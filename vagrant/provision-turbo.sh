@@ -32,7 +32,7 @@ After=network.service
 [Service]
 Type=simple
 EnvironmentFile=-/etc/profile.d/openshift.sh
-ExecStart=/usr/bin/openshift start --listen=http://0.0.0.0:8080
+ExecStart=/usr/bin/openshift start --listen=http://172.17.17.17:8080
 WorkingDirectory=/vagrant/
 
 [Install]

@@ -89,7 +89,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       config.vm.provision 'setup', type: 'shell', path: 'hack/vm-provision.sh'
     end
 
-    config.vm.network 'private_network', ip: '172.17.17.17'
+    config.vm.network 'private_network', ip: '172.17.17.17', virtualbox__intnet: true
 
     config.vm.provision 'shell', inline: '/vagrant/vagrant/provision-turbo.sh'
   end
