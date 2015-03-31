@@ -58,8 +58,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         'cpus'              => 2,
         'memory'            => 1024,
         'virtualbox'        => {
-            'box_name' => 'fedora_inst',
-            'box_url'  => 'https://mirror.openshift.com/pub/vagrant/boxes/openshift3/fedora_virtualbox_inst.box'
+            'box_name' => 'fedora20_openshift',
+            'box_url'  => 'https://mirror.openshift.com/pub/vagrant/boxes/openshift3/fedora_20_latest.box'
         },
         'vmware'            => {
             'box_name' => 'fedora_inst',
@@ -88,14 +88,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     else
       config.vm.provision 'setup', type: 'shell', path: 'hack/vm-provision.sh'
     end
-    # config.vm.synced_folder '.', '/vagrant', disabled: true
-    # config.vm.synced_folder sync_from, sync_to, :rsync__args => ['--verbose', '--archive', '--delete', '-z']
-    config.vm.network 'forwarded_port', guest: 80, host: 1080
-    config.vm.network 'forwarded_port', guest: 8080, host: 8080
-    config.vm.network 'forwarded_port', guest: 8443, host: 8443
-    config.vm.network 'forwarded_port', guest: 8444, host: 8444
 
-    config.vm.provision "shell", inline: '/vagrant/vagrant/provision-turbo.sh'
+    config.vm.network 'private_network', ip: '172.17.17.17'
+
+    config.vm.provision 'shell', inline: '/vagrant/vagrant/provision-turbo.sh'
   end
 
   # #########################################
@@ -110,7 +106,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     v.memory = vagrant_openshift_config['memory']
     v.cpus   = vagrant_openshift_config['cpus']
-    v.customize ["modifyvm", :id, "--cpus", "2"]
+    v.customize ['modifyvm', :id, '--cpus', '2']
     # to make the ha-proxy reachable from the host, you need to add a port forwarding rule from 1080 to 80, which
     # requires root privilege. Use iptables on linux based or ipfw on BSD based OS:
     # sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 1080

@@ -12,11 +12,11 @@ if [ -f /etc/sysconfig/docker.rpmnew ]; then
 fi
 
 echo 'Downloading OpenShift'
-tar_file=/tmp/origin-v0.4.1.tgz
-curl -Lk https://github.com/openshift/origin/releases/download/v0.4.1/openshift-origin-v0.4.1-2-g7a905ab-7a905ab-linux-amd64.tar.gz -o $tar_file
-tar zxf $tar_file -C /tmp
+curl -Lk https://github.com/openshift/origin/releases/download/v0.4.1/openshift-origin-v0.4.1-2-g7a905ab-7a905ab-linux-amd64.tar.gz | tar zxf - -C /tmp
 mv /tmp/openshift /usr/bin
 mv /tmp/osc /usr/bin
+
+chmod 1777 /tmp
 
 echo 'Start docker'
 systemctl enable docker.service
